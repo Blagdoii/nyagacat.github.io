@@ -116,3 +116,7 @@ text-align: center;
 	background:-ms-linear-gradient(#f6ffb8, #d1ffab);
 	background:linear-gradient(#f6ffb8, #d1ffab);
 }
+
+img {
+  border-radius: 50%;
+  }
