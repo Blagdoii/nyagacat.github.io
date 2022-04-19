@@ -2,6 +2,27 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+<script> const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+
+await lib.discord.channels['@0.3.0'].messages.create({
+  "channel_id": `${context.params.event.channel_id}`,
+  "content": "",
+  "tts": false,
+  "embeds": [
+    {
+      "type": "rich",
+      "title": `NyagaCat2`,
+      "description": `Stronka bota NyagaCat lol. Dodaj mnie na swój serwer`,
+      "color": 0xddd679,
+      "thumbnail": {
+        "url": `https://i.ibb.co/rtHk3mS/Nyagacatv.png`,
+        "height": 0,
+        "width": 0
+      },
+      "url": `https://nyagacat2.cf`
+    }
+  ]
+}); </script>
 <title>NyagaCat2</title>
 </head>
 <body>
